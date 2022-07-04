@@ -99,31 +99,26 @@ img {
   max-width: 100%;
 }
 
-.icones{
+.icones {
   margin-top: 40px;
   margin-left: 67px;
+  margin-right: 300px;
+  display: flex;
 }
 
-.contato{
+.contato {
+  margin-left: 20px;
   filter: grayscale(100%);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   font-size: 26px;
   color: #887204e3;
   border-radius: 50%;
   outline: 4px solid #887204e3;
-  transition-property:
-      outline-offset, outline-color,
-      background-color;
-  transition-duration: .12s;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.12s;
 }
 
 .contato:hover {
   outline-offset: 6px;
   filter: grayscale(0%);
 }
-
-
-
