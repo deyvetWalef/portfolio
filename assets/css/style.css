@@ -87,6 +87,7 @@ main {
 
 .inf {
   font-size: 26px;
+  line-height:1cm;
   position: relative;
 }
 
@@ -101,9 +102,12 @@ img {
 
 .icones {
   margin-top: 40px;
-  margin-left: 67px;
-  margin-right: 300px;
+  margin-left: 130px;
+  margin-right: 400px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
 }
 
 .contato {
