@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
@@ -10,6 +11,14 @@
 
 a {
   text-decoration: none;
+}
+
+body {
+  grid-template-columns: repeat(3, 396px);
+  grid-template-rows: auto;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .perfil {
@@ -51,18 +60,6 @@ main {
   padding-right: 20px;
 }
 
-.headerResponsivo {
-  cursor: pointer;
-  display: none;
-}
-
-.headerResponsivo div {
-  width: 32px;
-  height: 2px;
-  background: #ffffff;
-  margin: 8px;
-}
-
 .link {
   letter-spacing: 4px;
   margin-left: 35px;
@@ -90,111 +87,94 @@ main {
   transform-origin: left;
 }
 
-.foto {
-  padding: 20px;
-  width: 150px;
-  max-width: 100%;
-  display: block;
-}
-
-.box-foto {
-  position: absolute;
-  margin-top: 1px;
+.primeiro {
+  padding: 3rem 0;
   display: flex;
-}
-
-.box-inf {
-  margin-top: 10px;
-  margin-left: 12px;
-  width: 400px;
-}
-
-.inf {
-  font-size: 26px;
-  line-height: 1cm;
-  position: relative;
-}
-
-.contatos {
-  display: inline-flex;
-}
-
-img {
-  width: 50px;
-  max-width: 100%;
-}
-
-.icones {
-  margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 400px;
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  width: 400px;
-}
-
-.contato {
-  margin-left: 20px;
-  filter: brightness(50%);
-  text-decoration: none;
-  font-size: 26px;
-  color: #ffffff;
-  border-radius: 50%;
-  outline: 4px solid #00e6f6;
-  transition-property: outline-offset, outline-color, background-color;
-  transition-duration: 0.12s;
-}
-
-.contato:hover {
-  outline-offset: 4px;
-  filter: grayscale(0%);
+  align-items: center;
+  gap: 3rem;
 }
 
 .sobreMim {
-  padding: 20px;
-  padding-top: 110px;
-  display: inline-flex;
-  border-right: 100px;
-  padding-right: 475px;
-}
-
-.detalhesContatos {
-  border-left: 100px;
-  padding: 20px;
-  padding-top: 110px;
-  display: inline-block;
-}
-
-.meusProjetos {
-  width: 100px;
-  padding: 20px;
-  padding-right: 150px;
-}
-
-.card-container {
-  width: 700px;
-  padding: 1px;
-  perspective: 2 00px;
-  display: inline-flex;
-  flex-direction: row;
-  padding-top: 550px;
-}
-.card {
-  width: 100px;
-  height: 100px;
-  transform-style: preserve-3d;
   position: relative;
-  transition: transform 0.45s cubic-bezier(0.4, 0.03, 0.5, 0.9);
+  width: 300px;
+  height: 500px;
+  color: #00e6f6;
+  text-align: center;
+  place-content: center;
+  padding: 20px;
+  background: url("/assets/image/perfil.png") center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
 }
-.card__image {
-  width: 100px;
-  max-width: 100%;
+
+.sobreMim::before,
+.sobreMim::after {
+  content: "";
   position: absolute;
-  backface-visibility: hidden;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 50px);
+  background-color: #082a3a;
+  transition: transform 0.5s.25s ease-in;
+  z-index: -1;
 }
-.card__image:nth-child(2),
-.card:hover {
-  transform: rotate3d(1, 1, 0, 180deg);
+
+.sobreMim::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translateY(-100%);
+}
+
+.sobreMim::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translateY(100%);
+}
+
+.cardsobreMim {
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.cardTitulo {
+  color: #00e6f6;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.cardDescricao {
+  font-size: 25px;
+}
+
+.sobreMim:hover::before,
+.sobreMim:hover::after {
+  transform: translateY(0);
+}
+
+.sobreMim:hover .cardsobreMim {
+  opacity: 1;
+  transition-delay: .75s;
+}
+/*
+.fotoPerfil {
+  width: 25vw;
+  max-width: 350px;
+  min-width: 250px;
+  box-shadow: 0px 10px 17px 0px #000000;
+}
+
+.cardDescricao {
+  width: 30%;
+  max-width: 400px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
