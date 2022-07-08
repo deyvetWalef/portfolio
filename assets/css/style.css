@@ -159,22 +159,9 @@ main {
   opacity: 1;
   transition-delay: .75s;
 }
-/*
-.fotoPerfil {
-  width: 25vw;
-  max-width: 350px;
-  min-width: 250px;
-  box-shadow: 0px 10px 17px 0px #000000;
+
+.contatos{
+  padding: 4rem 0;
 }
 
-.cardDescricao {
-  width: 30%;
-  max-width: 400px;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
 
