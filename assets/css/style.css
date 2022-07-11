@@ -104,7 +104,7 @@ main {
   text-align: center;
   place-content: center;
   padding: 20px;
-  background: url("../assets/image/perfil.png") center no-repeat;
+  background: url("./assets/image/perfil.png") center no-repeat;
   background-size: cover;
   border-radius: 20px;
   z-index: 1;
