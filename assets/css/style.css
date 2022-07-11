@@ -64,7 +64,7 @@ main {
   letter-spacing: 4px;
   margin-left: 35px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
   position: relative;
 }
@@ -88,15 +88,15 @@ main {
 }
 
 .primeiro {
-  padding: 3rem 0;
+  padding: 1rem 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
 .sobreMim {
+  display: flex;
   position: relative;
   width: 300px;
   height: 500px;
@@ -137,17 +137,20 @@ main {
 
 .cardsobreMim {
   opacity: 0;
-  transition: opacity .25s;
+  transition: opacity 0.25s;
 }
 
 .cardTitulo {
-  color: #00e6f6;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .cardDescricao {
   font-size: 25px;
+  color: #00e6f6;
 }
 
 .sobreMim:hover::before,
@@ -157,11 +160,46 @@ main {
 
 .sobreMim:hover .cardsobreMim {
   opacity: 1;
-  transition-delay: .75s;
+  transition-delay: 0.75s;
 }
 
-.contatos{
-  padding: 4rem 0;
+.segundo {
+  padding: 2rem 0;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
 
+.cardSkills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3.5rem 3.5rem;
+}
+
+.imagemLinguagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 300px;
+  padding: 2rem;
+}
+
+.cards_img {
+  width: 20vw;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.terceiro {
+  padding: 2rem 0;
+}
