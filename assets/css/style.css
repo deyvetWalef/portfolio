@@ -145,6 +145,12 @@ main {
 }
 
 .cardTitulo {
+  background: rgb(8, 42, 58);
+  background: radial-gradient(
+    circle,
+    rgba(8, 42, 58, 1) 29%,
+    rgba(31, 108, 171, 1) 83%
+  );
   padding: 40px;
   text-align: center;
   color: #ffffff;
@@ -212,13 +218,31 @@ main {
   padding: 2rem 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  .primeiro {
+    display: flex;
+    width: 400px;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardsobreMim {
+    height: 250px;
+    width: 300px;
+  }
   .cardDescricao {
+    display: flex;
     justify-items: center;
     justify-content: center;
     display: flex;
     max-height: 100px;
+    max-width: 150px;
+    font-size: 22px;
+  }
+  .sobreMim {
+    position: relative;
     max-width: 300px;
-    font-size: 23px;
+    height: 450px;
   }
 }
