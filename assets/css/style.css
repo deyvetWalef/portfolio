@@ -96,15 +96,15 @@ main {
 }
 
 .sobreMim {
-  display: flex;
   position: relative;
-  width: 300px;
-  height: 500px;
+  max-width: 500px;
+  height: 550px;
   color: #00e6f6;
   text-align: center;
   place-content: center;
   padding: 20px;
-  background: url("https://github.com/deyvetWalef/portfolio/blob/main/assets/image/perfil.png?raw=true") center no-repeat;
+  background: url("https://github.com/deyvetWalef/portfolio/blob/main/assets/image/perfil.png?raw=true")
+    center no-repeat;
   background-size: cover;
   border-radius: 20px;
   z-index: 1;
@@ -153,6 +153,10 @@ main {
 }
 
 .cardDescricao {
+  justify-items: center;
+  display: flex;
+  max-height: 100px;
+  max-width: 300px;
   font-size: 25px;
   color: #00e6f6;
 }
@@ -207,3 +211,13 @@ main {
 .terceiro {
   padding: 2rem 0;
 }
+
+@media (max-width: 800px) {
+  .cardDescricao {
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 100px;
+    max-width: 300px;
+    font-size: 23px;
+  }
