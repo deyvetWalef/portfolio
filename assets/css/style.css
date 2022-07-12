@@ -145,7 +145,7 @@ main {
 }
 
 .titulo{
-  padding: 20px;
+  padding: 60px;
 }
 
 .cardTitulo {
@@ -222,6 +222,10 @@ main {
   padding: 2rem 0;
 }
 
+.quarto {
+  padding: 2rem 0;
+}
+
 @media (max-width: 850px) {
   .primeiro {
     display: flex;
@@ -250,3 +254,4 @@ main {
     height: 450px;
   }
 }
+
