@@ -144,6 +144,10 @@ main {
   align-content: center;
 }
 
+.titulo{
+  padding: 20px;
+}
+
 .cardTitulo {
   background: rgb(8, 42, 58);
   background: radial-gradient(
@@ -151,7 +155,7 @@ main {
     rgba(8, 42, 58, 1) 29%,
     rgba(31, 108, 171, 1) 83%
   );
-  padding: 40px;
+  padding: 10px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 30px;
