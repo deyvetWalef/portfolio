@@ -103,7 +103,7 @@ main {
   text-align: center;
   place-content: center;
   padding: 20px;
-  background: url("https://github.com/deyvetWalef/portfolio/blob/main/assets/image/perfil.png?raw=true")
+  background: url("https://github.com/deyvetWalef/portfolio/blob/main/assets/image/perfil0.jpg?raw=true")
     center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -144,7 +144,7 @@ main {
   align-content: center;
 }
 
-.titulo{
+.titulo {
   padding: 60px;
 }
 
@@ -254,4 +254,3 @@ main {
     height: 450px;
   }
 }
-
