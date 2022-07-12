@@ -137,6 +137,47 @@ main {
   transform: translateY(100%);
 }
 
+.sobreMimAntes {
+  position: relative;
+  max-width: 500px;
+  height: 550px;
+  color: #00e6f6;
+  text-align: center;
+  place-content: center;
+  padding: 20px;
+  background: url("https://github.com/deyvetWalef/portfolio/blob/main/assets/image/perfil.png?raw=true")
+    center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+}
+
+.sobreMimAntes::before,
+.sobreMimAntes::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 50px);
+  background-color: #082a3a;
+  transition: transform 0.5s.25s ease-in;
+  z-index: -1;
+}
+
+.sobreMimAntes::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translateY(-100%);
+}
+
+.sobreMimAntes::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translateY(100%);
+}
 .cardsobreMim {
   opacity: 0;
   transition: opacity 0.25s;
