@@ -144,7 +144,7 @@ main {
   align-content: center;
 }
 
-.titulo{
+.titulo {
   padding: 40px;
 }
 
@@ -200,6 +200,11 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 3.5rem 3.5rem;
+}
+
+.imagemLinguagem:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -4px -8px 18px -1px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -4px -8px 18px -1px rgba(0,0,0,0);
 }
 
 .imagemLinguagem {
